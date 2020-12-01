@@ -6,6 +6,12 @@
     <title>Tableaux associatifs</title>
 </head>
 <body>
-    
+<?php $facture = array(
+    "Janvier"   =>  500,
+    "Février"   =>  620,
+    "Décembre"  =>  300
+); 
+var_dump($facture);
+?>
 </body>
 </html>
