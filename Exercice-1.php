@@ -21,15 +21,16 @@
     </code>
 
     <?php
+    //tableau
     $a = array("19001" => array("Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "", "", "Centre", "Centre", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Validation", "Validation"), 
     "19002" => array("Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Validation", ""), 
     "19003" => array("", "", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "", "", "Validation") 
    );
-   echo count($a[19002]);
-   $key = array_search('Validation', $a[19002]);
-   $semaine = $key +1;
-   echo 'Quelle semaine a lieu la validation du groupe 19002 ?<br>';
-   echo 'la validation du groupe 19002 aura lieu la semaine '.$semaine.'/'.count($a[19002]) ;
+
+   $key = array_search('Validation', $a[19002]);// on recherche le mot validation
+   $semaine = $key +1;// on rajoute 1 car sa démarre à zéro
+   echo 'Quelle semaine a lieu la validation du groupe 19002 ?<br>
+   la validation du groupe 19002 aura lieu la semaine '.$semaine.'/'.count($a[19002]) ;
    ?>
 </body>
 </html>
