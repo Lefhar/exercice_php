@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Exercice 3</h1>
-<p>Trouver la position de la dernière occurrence de Stage pour le groupe 19001.</a>
+<p>Extraire, dans un nouveau tableau, les codes des groupes.</a>
 
 <p>Cet exercice est issu d'un cas réel de développement d'une application de gestion de plannings.</p>
 
