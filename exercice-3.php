@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice 2</title>
+    <title>Exercice 3</title>
 </head>
 <body>
-<h1>Exercice 2</h1>
+<h1>Exercice 3</h1>
 <p>Trouver la position de la dernière occurrence de Stage pour le groupe 19001.</a>
 
 <p>Cet exercice est issu d'un cas réel de développement d'une application de gestion de plannings.</p>
@@ -30,13 +30,22 @@
     "19002" => array("Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Validation", ""), 
     "19003" => array("", "", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Centre", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "Stage", "", "", "Validation") 
    );
-   $semaine = count($a[19001]);
-   $i = -1;
-   while ($a[19001][++$i] != "Stage");//on boucle jusqu'à la premiére occurence stage sa donne position 10
-   $occ = array_count_values($a[19001]);// compte le nombre d'occurence
-$nombre  =  $occ['Stage'] + $i ;// on additionne le nombre de fois que ressort stage + $i
-   echo 'Trouver la position de la dernière occurrence de Stage pour le groupe 19001. ?<br>
-   la dernière période de stage aura lieu semaine '.$nombre.'/'.$semaine.' Semaines' ;
+   $i = 0;
+   $groupe1 =  array();
+   $tab =  array();
+
+   foreach ($a as $key => $value) {
+    $groupe1[$i] = $value;
+    $i++;
+}
+
+var_dump($groupe1);
+
+foreach ($groupe1 as $key => $value) {
+    $tab[$i] = $value;
+
+}
+var_dump($tab);
    ?>
 </body>
 </html>
