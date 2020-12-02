@@ -37,6 +37,50 @@ while($x<=$multiple){
     echo "</tr>"; 
     $x++;
 }
+
+echo 'corrigé <br>';
+echo "<table>\n";
+  
+// La 1ère ligne est une ligne d'entête, donc avec <thead>
+echo"<thead>\n";
+echo"<tr>\n";
+// La 1ère cellule est vide
+echo"<th> </th>\n";
+
+// Puis on peut créer 12 autres cellules
+for ($th=0; $th<=12; $th++)
+{
+    echo"<th>".$th."</th>\n";
+}       
+
+// On ferme la ligne
+echo"</tr>\n";
+
+// On ferme le <thead
+echo"</thead>\n";
+
+// Puis on a besoin de 13 lignes de 13 cellules chacune
+for ($ligne=0; $ligne<13; $ligne++)
+{    
+    echo"<tr>\n";
+    
+    // Pour toutes les autres lignes, la 1ère cellule est un <th>  
+    // echo"<thead>\n";
+    echo"<th>".$ligne."</th>\n";
+    //  echo"</thead>\n";        
+        
+    // Puis les 12 autres cellules sont des <td>  
+    for ($td=0; $td<=12; $td++)
+    {
+        $resultat = $ligne*$td;  
+        echo "<td>".$resultat."</td>\n";
+    }        
+       
+    // Dans tous les cas, on ferme la ligne
+    echo"</tr>\n";           
+}
+
+echo"</table>\n";
 ?>
 </body>
 </html>

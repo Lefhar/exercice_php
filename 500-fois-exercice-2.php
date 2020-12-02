@@ -13,7 +13,11 @@ while($sauvegarde < 500){
     echo '- '.$sauvegarde.' Je dois faire des sauvegardes régulières de mes fichiers.<br>';
 }
 
-
+echo 'corrigé<br>';
+for ($i=0; $i<500; $i++)
+{    
+   echo "Je dois être acteur de ma formation<br>";
+}
     ?>
 </body>
 </html>

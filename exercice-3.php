@@ -46,6 +46,11 @@ foreach ($groupe1 as $key => $value) {
 
 }
 var_dump($tab);
+
+echo 'corrigé</br>';
+$aCodes = array_keys($a);
+var_dump($aCodes);
+
    ?>
 </body>
 </html>

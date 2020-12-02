@@ -33,6 +33,13 @@
    $occ = array_count_values($a[19003]);// compte le nombre d'occurence
    $nombre  =  $occ['Stage'] ;// nombre de fois qu'il ya l'occurence Stage
    echo 'le stage dur '.$nombre.'/'.count($a[19003]).' semaines';
+
+   echo '<br>corrigé<br>';
+   $aNbSemaines = array_count_values($a["19003"]);
+
+var_dump($aNbSemaines);
+
+echo"Le stage du groupe 19003 dure ".$aNbSemaines["Stage"]." semaines.<br>";
    ?>
 </body>
 </html>
