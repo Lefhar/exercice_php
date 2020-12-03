@@ -113,9 +113,19 @@ else
 //verification d'acceptation CGU
 if(isset($_POST['cgu']))
 {
-echo  'cgu validé';
+echo  'cgu validé<br>';
 }else{
     echo 'vous n\'avez pas validé les CGU<br>';
 }
+$datetime1 = date_create(date('Y-m-d'));
+$datetime2 = date_create($_POST['date']);
+$interval = date_diff($datetime2,$datetime1);
+if(!empty($_POST['date'])&&preg_match("/[0-9]{4}+[-]+[0-9]{2}+[-]+[0-9]{2}/",$_POST['date'])&&$interval->format('%y')>=15&&$interval->format('%y')<=100){
+echo $_POST['date'];
+    
+}else{
+    echo 'format de date non valide';
+}
+
 
 ?>
