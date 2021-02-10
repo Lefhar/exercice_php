@@ -9,4 +9,5 @@ while (!feof($fp))
     echo "\n<li><a href='".urldecode(trim($ligne))."' target='_blank'>".urldecode(trim($ligne))."</a> </li>\n";
     }
 }
+fclose($fp);
 echo '</ul>';
